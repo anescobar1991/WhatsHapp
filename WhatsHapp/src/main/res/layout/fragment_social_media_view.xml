@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/socialMediaView_relativeLayout_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/socialMediaView_textView_socialMediaTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:textColor="#ccd6dd"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/socialMediaView_relativeLayout_instagram_column"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5">
+
+        <LinearLayout
+            android:id="@+id/socialMediaView_linearView_instagramColumnHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ccd6dd"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/socialMediaView_imageView_instagram_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ccd6dd"
+                android:contentDescription="@string/instagram_icon_accessibility_label"
+                android:src="@drawable/instagram_icon" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/socialMediaView_listView_instagramPostsContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/socialMediaView_linearView_instagramColumnHeader" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/socialMediaView_relativeLayout_twitter_column"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5">
+
+        <LinearLayout
+            android:id="@+id/socialMediaView_linearView_tweetsColumnHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ccd6dd"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/socialMediaView_imageView_twitter_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ccd6dd"
+                android:contentDescription="@string/twitter_icon_accessibility_label"
+                android:src="@drawable/twitter_logo_blue" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/socialMediaView_listView_twitterPostsContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/socialMediaView_linearView_tweetsColumnHeader" />
+
+    </RelativeLayout>
+
+</LinearLayout>

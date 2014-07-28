@@ -1,0 +1,199 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/searchFilterView_textView_eventSearchSubHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="32dp"
+        android:background="#ff1ea910"
+        android:gravity="start|center_vertical"
+        android:paddingLeft="4dp"
+        android:text="@string/eventSearchSubHeadingText"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/searchFilterView_view_separator1"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@+id/searchFilterView_textView_eventSearchSubHeading" />
+
+    <Spinner
+        android:id="@+id/searchFilterView_spinner_eventCatSpinner"
+        style="android:DropDownNav.Whatshapp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchFilterView_view_separator1" />
+
+    <View
+        android:id="@+id/searchFilterView_view_separator2"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@+id/searchFilterView_spinner_eventCatSpinner" />
+
+    <FrameLayout
+        android:id="@+id/searchFilterView_frameLayout_eventSearchBarContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchFilterView_view_separator2">
+
+        <EditText
+            android:id="@+id/searchFilterView_editText_eventsSearchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:hint="@string/events_search_text_field_hint"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/searchFilterView_imageButton_eventSearchBarClearTextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/ic_action_remove_dark"
+            android:contentDescription="@string/clearTextButton_accessibility_label"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/searchFilterView_view_separator3"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_below="@+id/searchFilterView_frameLayout_eventSearchBarContainer" />
+
+    <TextView
+        android:id="@+id/searchFilterView_textView_locationSearchSubHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchFilterView_view_separator3"
+        android:height="32dp"
+        android:background="#ff1ea910"
+        android:gravity="start|center_vertical"
+        android:paddingLeft="4dp"
+        android:text="@string/locationSearchSubHeadingText"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <FrameLayout
+        android:id="@+id/searchFilterView_frameLayout_locationSearchBarContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchFilterView_textView_locationSearchSubHeading"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <EditText
+            android:id="@+id/searchFilterView_editText_locationSearchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|fill_horizontal"
+            android:hint="@string/location_search_hint"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/searchFilterView_imageButton_locationSearchBarClearTextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/ic_action_remove_dark"
+            android:contentDescription="@string/clearTextButton_accessibility_label"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/searchFilterView_linearLayout_searchRadiusSelectorContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchFilterView_frameLayout_locationSearchBarContainer"
+        android:paddingBottom="32dp">
+
+        <TextView
+            android:id="@+id/searchFilterView_textView_searchRadiusSelectorLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="4dp"
+            android:text="@string/searchRadiusSelectorLabel"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/searchFilterView_seekBar_searchRadiusSelector"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:max="24" />
+
+        <TextView
+            android:id="@+id/searchFilterView_textView_radiusSelectedLabel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingRight="4dp"
+            android:text="@string/defaultRadiusLabel"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!--<TextView-->
+    <!--android:id="@+id/searchFilterView_textView_dateSearchSubHeading"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_below="@+id/searchFilterView_linearLayout_searchRadiusSelectorContainer"-->
+    <!--android:height="32dp"-->
+    <!--android:background="#ff1ea910"-->
+    <!--android:gravity="start|center_vertical"-->
+    <!--android:paddingLeft="4dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textColor="#FFFFFF"-->
+    <!--android:textSize="16sp"-->
+    <!--android:text="Is there a specific date range you'd like to look in?"/>-->
+
+
+    <LinearLayout
+        android:id="@+id/searchFilterView_linearLayout_buttonsHolder"
+        style="?android:buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchFilterView_linearLayout_searchRadiusSelectorContainer"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/searchFilterView_button_resetFilterSearchButton"
+            style="?android:buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_whatshapp"
+            android:enabled="false"
+            android:minHeight="36dp"
+            android:minWidth="0dp"
+            android:text="@string/resetEventSearchFilterButton"
+            android:textColor="#FFFFFF" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".05" />
+
+        <Button
+            android:id="@+id/searchFilterView_button_submitFilterSearchButton"
+            style="?android:buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_whatshapp"
+            android:minHeight="36dp"
+            android:minWidth="0dp"
+            android:text="@string/submitEventSearchFilterButton"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</RelativeLayout>

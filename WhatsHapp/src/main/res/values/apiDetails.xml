@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="eventfulAPIKey">xm62fsdhZkLwQgZJ</string>
+    <string name="eventfulAPIBaseUrl">http://api.eventful.com/json/events/search?app_key=</string>
+    <string name="instagramAPIKey">INSERTKEYHERE</string>
+    <string name="instagramAPIUrl">INSERTURLHERE=</string>
+    <string name="twitterAPIKey">INSERTKEYHERE</string>
+    <string name="twitterAPIUrl">INSERTURLHERE</string>
+
+</resources>

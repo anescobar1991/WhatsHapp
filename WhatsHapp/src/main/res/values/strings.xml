@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WhatsHapp</string>
+    <string name="locationSearchSubHeadingText">Where do you want to explore?</string>
+    <string name="eventSearchSubHeadingText">Do you have a specific event in mind?</string>
+    <string name="title_social_media_view">Buzz in the area</string>
+    <string name="events_search_text_field_hint">Search for events by keyword</string>
+    <string name="search_events_accessibility_label">Search for events</string>
+    <string name="clearTextButton_accessibility_label">Clear text</string>
+    <string name="location_search_hint">Enter a location here or leave blank to use your current location</string>
+    <string name="defaultRadiusLabel">5 miles</string>
+    <string name="mainActivity_messageBarText">Where\'s the action?</string>
+    <string name="action_searchFilterView">Search/Filter events</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_about_title">About this app</string>
+    <string name="action_settings_title">Settings</string>
+    <string name="event_buzz_button_title">Buzz about this event</string>
+    <string name="instagram_icon_accessibility_label">Instagram posts</string>
+    <string name="searchRadiusSelectorLabel">Search Radius:</string>
+    <string name="submitEventSearchFilterButton">Submit</string>
+    <string name="resetEventSearchFilterButton">Reset</string>
+    <string name="twitter_icon_accessibility_label">Tweets</string>
+    <string name="invalid_location_message">Couldn\'t find that location, searching around you instead.</string>
+    <string name="empty_searchfield_message">You left the search field empty!</string>
+    <string name="no_events_found_message">There were no events found in the searched area, try searching in another area or broadening your search!</string>
+    <string name="next_event_accessibility_label">Go to next event</string>
+    <string name="previous_event_accessibility_label">Go to previous event</string>
+    <string name="eventsView_generic_error_message">Can\'t load any events due to a lack of connectivity. Are you connected to a network?</string>
+</resources>

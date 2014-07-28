@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/eventsSlide_relativeLayout_eventsContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/eventsSlide_event_detailsContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/eventsSlide_imageView_previous_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_action_previous_item"
+            android:contentDescription="@string/previous_event_accessibility_label" />
+
+        <ImageView
+            android:id="@+id/eventsSlide_imageView_event_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/eventsSlide_imageView_previous_event"
+            android:contentDescription="@null"
+            android:paddingRight="4dp" />
+
+        <Button
+            android:id="@+id/eventsSlide_textView_eventName"
+            style="?android:borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/eventsSlide_imageView_event_image"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="1"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:textColor="#2684ff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/eventsSlide_textView_venueName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventsSlide_textView_eventName"
+            android:layout_toRightOf="@+id/eventsSlide_imageView_event_image"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="4dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/eventsSlide_textView_venueAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventsSlide_textView_venueName"
+            android:layout_toRightOf="@+id/eventsSlide_imageView_event_image"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="4dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/eventsSlide_textView_venueCityRegionCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventsSlide_textView_venueAddress"
+            android:layout_toRightOf="@+id/eventsSlide_imageView_event_image"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="4dp"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/eventsSlide_imageView_next_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_action_next_item"
+            android:contentDescription="@string/next_event_accessibility_label" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

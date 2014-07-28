@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="event_categories_array">
+        <item>All Events</item>
+        <item>Concerts &amp; Tour Dates</item>
+        <item>Conferences &amp; Tradeshows</item>
+        <item>Comedy</item>
+        <item>Education</item>
+        <item>Kids &amp; Family</item>
+        <item>Festivals</item>
+        <item>Film</item>
+        <item>Food &amp; Wine</item>
+        <item>Fundraising &amp; Charity</item>
+        <item>Art Galleries &amp; Exhibits</item>
+        <item>Health &amp; Wellness</item>
+        <item>Holiday</item>
+        <item>Literary &amp; Books</item>
+        <item>Museums &amp; Attractions</item>
+        <item>Neighborhood</item>
+        <item>Business &amp; Networking</item>
+        <item>Nightlife &amp; Singles</item>
+        <item>University &amp; Alumni</item>
+        <item>Organizations &amp; Meetups</item>
+        <item>Outdoors &amp; Recreation</item>
+        <item>Performing Arts</item>
+        <item>Pets</item>
+        <item>Politics &amp; Activism</item>
+        <item>Sales &amp; Retail</item>
+        <item>Science</item>
+        <item>Religion &amp; Spirituality</item>
+        <item>Sports</item>
+        <item>Technology</item>
+        <item>Other &amp; Miscellaneous</item>
+    </string-array>
+</resources>
